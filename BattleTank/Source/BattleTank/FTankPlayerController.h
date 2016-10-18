@@ -19,7 +19,9 @@ public:
 	void Tick(float DeltaTime) override;
 	void BeginPlay() override;
 
+
 private:
 	//Move barrel so that a shot would hit where the crosshair intersects the world
 	void AimTowardsCrosshair();
+	bool GetSightRayHitLocation(FVector& HitLocation) const;
 };
